@@ -1,0 +1,51 @@
+@import "../assets/iconfont/iconfont.css";
+@import "reset";
+@import "common";
+
+.sub-header {
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 0 30px;
+  line-height: 48px;
+  color: #272E30;
+}
+
+.page-content {
+  margin-top: 10px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  height: calc(100% - 48px - 10px);
+  padding: 5px 20px;
+}
+
+.tab-wrap{
+  display: flex;
+  li{
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 14px;
+    color: #4D6169;
+    margin-right: 30px;
+    min-width: 50px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    &.active{
+      color: #272E30;
+      border-bottom: 3px solid $theme-color;
+    }
+  }
+}
+
+// spin loading
+.spin-icon-load{
+  animation: ani-demo-spin 1s linear infinite;
+}
+@keyframes ani-demo-spin {
+  from { transform: rotate(0deg);}
+  50%  { transform: rotate(180deg);}
+  to   { transform: rotate(360deg);}
+}
+
+
